@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>table tag</title>
+</head>
+<body>
+	<table border="1" width="400" cellpadding="10" cellspacing="5"> <!-- border: 테두리. cellpadding: 셀의 안쪽 여백 cellspacing: 셀의 바깥쪽 여백 -->
+		<caption>표제목</caption>
+		<tr> <!--행. 아래에 th or td 꼭-->
+			<th width="200" height="60"  align="right">제목셀1</th> <!-- 셀제목. 굵게, align: 가로 정렬(left, right, center) -->
+			<th width="100" height="60" valign="bottom">제목셀2</th> <!-- valign: .세로 정렬(top, middle, bottom) -->
+		</tr>
+		<tr>
+			<td>일반칸1</td> <!-- 일반 셀. -->
+			<td>일반칸2</td>
+		</tr>
+	</table> 
+	<hr>
+
+	<!-- colspan: 같은 행 병합 -->
+	<!-- rowspan: 다른 행 병합 -->
+	<h4>e.g. colspan</h4>
+	<table border="" width="200">
+		<tr>
+			<td colspan="3">1</td> 
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+	</table>
+	<hr>
+
+	<h4>e.g. rowspan</h4>
+	<table border="" width="200">
+		<tr>
+			<td rowspan="2">1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+		</tr>
+	</table>
+	<hr>
+
+	<!-- thead: 테이블의 제목을 묶는 그룹 태그 -->
+	<!-- tbody: 테이블의 일반적 데이터 묶는 그룹 태그. 크롬 개발자 모드에서 테이블안에 자동 생성-->
+	<!-- tfoot: 테이블의 마지막 아래 부분을 묶는 그룹태그 -->
+	<!-- 사용하지 않아도 웹 표준에 오류 없음 -->
+	<h4>e.g. thead, tbody, tfoot</h4>
+	<table border="">
+		<caption>방한 횟수별 한국 여행 시 좋았던 점(단위 : 명)</caption>
+		<thead>
+			<tr> <!--thead안에서도  tr로 또 분리-->
+				<td>방한 횟수</td>
+				<td>편리한 교통</td>
+				<td>친절한 사람들</td>
+				<td>독특한 문화유산</td>
+				<td>맛있는 음식</td>
+				<td>다양한 쇼핑</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1회</td>
+				<td>3,700</td>
+				<td>4,200</td>
+				<td>3,700</td>
+				<td>4,100</td>
+				<td>4,900</td>
+			</tr>
+			<tr>
+				<td>2회</td>
+				<td>3,100</td>
+				<td>4,000</td>
+				<td>3,500</td>
+				<td>4,700</td>
+				<td>4,200</td>
+			</tr>
+			<tr>
+				<td>3회 이상</td>
+				<td>3,500</td>
+				<td>4,500</td>
+				<td>3,200</td>
+				<td>5,000</td>
+				<td>3,900</td>
+			</tr>
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<td>합계</td>
+				<td>10,300</td>
+				<td>12,700</td>
+				<td>10,400</td>
+				<td>13,800</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
