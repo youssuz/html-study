@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>exercise08_button_tag</title>
+</head>
+<body>
+	<h1>input type="button" VS button tag</h1>
+	<form action="">
+		<p>
+			<input type="button" value="input button">
+		</p>
+		<p>
+			해당 버튼이 form data를 제출하는 버튼임을 명시<br>
+			<button type="submit">제출하기</button>
+		</p>
+		<p>
+			해당 버튼이 form data를 초기값으로 리셋하는 버튼임을 명시<br>
+			<button type="reset">다시쓰기</button>
+		</p>
+	</form>
+	
+	<h1>form 관련 tag 공통 속성</h1>
+	<p>
+		disabled: 상호작용 요소 비활성(input, textarea, select, button)<br>
+		<form action="">
+			<button type="button" disabled>비활성</button>
+		</form>
+	</p>
+
+	<p>
+		readonly: 상호작용 요소 읽기 전용으로 변경(입력 불가능, 선택복사 가능)	
+		<form action="">
+			<input type="text" value="입력" readonly>
+		</form>
+	</p>
+
+	<p>
+		maxlength: 입력할 수 있는 글자 수 제한
+		<form action="">
+			<input type="text" maxlength="4" value="4글자만">
+		</form>
+	</p>
+
+	<p>
+		checked: 선택한 상태로 표시(checkbox, radio)
+		<form action="">
+			<input type="checkbox">
+			<input type="checkbox" checked>
+			<input type="radio">
+			<input type="radio" checked>
+		</form>
+	</p>
+
+	<p>
+		placeholder: 입력 요소에 어떤 값을 입력하면 되는지 힌트를 적는 용도
+		<form action="">
+			<input type="email" placeholder="xxxx@naver.com">
+		</form>
+	</p>
+</body>
+</html>

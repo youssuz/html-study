@@ -7,7 +7,7 @@
 </head>
 <body>
 	<h1>그룹짓기: fieldset, legend</h1>
-	<form action="memo.txt">
+	<form action="../memo.txt">
 		<fieldset>
 			<legend>기본 정보</legend> <!-- 그룹의 이름 -->
 			<p>
@@ -24,7 +24,7 @@
 	</form>
 
 	<h1>여러 줄의 입력 요소 생성: textarea</h1>
-	<form action="memo.txt">
+	<form action="../memo.txt">
 		<fieldset>
 			<legend>글쓰기</legend>
 			<p>
@@ -40,17 +40,19 @@
 		option: 생성한 드롭다운 목록의 항목. selected(기본값설정)<br>
 		opgroup: 생성한 항목 그룹으로 묶기, 그 그룹의 이름
 	</p>
-	<form action="memo.text">
-		<select>
+	<form action="../memo.txt">
+		<select size=""> <!-- multiple -->
 			<optgroup label="서울특별시"> 
 				<option value="강남">강남</option>
 				<option value="강북">강북</option>
 			</optgroup>
 			<optgroup label="경기도">
-				<option value="군포">군포</option>
+				<option value="군포" selected>군포</option>
 				<option value="화성">화성</option>
 			</optgroup>
 		</select>
+
+		<input type="submit" value="send"> <!-- value="입력요소의 초기값"-->
 	</form>
 
 
