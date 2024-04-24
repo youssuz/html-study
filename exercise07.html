@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>exercise07_입력양식_fieldset, select</title>
+</head>
+<body>
+	<h1>그룹짓기: fieldset, legend</h1>
+	<form action="memo.txt">
+		<fieldset>
+			<legend>기본 정보</legend> <!-- 그룹의 이름 -->
+			<p>
+				<label>
+					아이디
+					<input type="text">
+				</label>
+			</p>
+			<p>
+				<label for="userpw">비밀번호</label>
+				<input type="password">
+			</p>
+		</fieldset>
+	</form>
+
+	<h1>여러 줄의 입력 요소 생성: textarea</h1>
+	<form action="memo.txt">
+		<fieldset>
+			<legend>글쓰기</legend>
+			<p>
+				<label for="writing">내용</label>
+				<textarea name="desc" id="writing" cols="" rows=""></textarea> <!-- cols, rows css에서 설정 권장-->
+			</p>
+		</fieldset>
+	</form>
+
+	<h1>select, option, optgroup</h1>
+	<p>
+		select: 드롭다운 목록 or 콤보박스 생성. size(화면 표시 항목 개수), multiple(중복선택)<br>
+		option: 생성한 드롭다운 목록의 항목. selected(기본값설정)<br>
+		opgroup: 생성한 항목 그룹으로 묶기, 그 그룹의 이름
+	</p>
+	<form action="memo.text">
+		<select>
+			<optgroup label="서울특별시"> 
+				<option value="강남">강남</option>
+				<option value="강북">강북</option>
+			</optgroup>
+			<optgroup label="경기도">
+				<option value="군포">군포</option>
+				<option value="화성">화성</option>
+			</optgroup>
+		</select>
+	</form>
+
+
+</body>
+</html>

@@ -3,9 +3,97 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Document</title>
+		<title>exercise06_입력양식_input,label</title>
 	</head>
 	<body>
-		
+		<!-- <form action="입력받은 값들을 전송할 서버의 url" method="송신 방식(get: 보안이 중요하지 않은 데이터 or post: 보안이 요구되는 정보. http 헤더에 데이터를 넣어 보냄)"></form> 양식을 의미-->
+
+		<h1>input tag</h1>
+		<p>
+			&lt;input type="입력타입" name="input 요소의 이름" value="입력 요소의 초기값"&gt; <br>
+			type: text, password, tel, number, url, search, email, checkbox, radio, file, button, image(버튼요소 생성. src 속성 사용, alt x), hidden, date, datetime-local, month, week, time, range(범위), color, submit(폼 전송 역할 버튼), reset(입력값 초기화 버튼) <br>
+		</p>
+	
+		<p>label 태그: 폼 태그 안에서 사용하는 상호작용 요소에 이름을 붙일 때 사용 (암묵적/명시적)</p>
+		<form	orm action="" method="get">
+		<ul>
+				<li>
+					<label> <!-- 암묵적: 라벨 태그에 상호작용 요소 포함 -->
+						text
+					<input type="text">
+					</label>
+				</li>
+				<li>
+					<label for="userpw">password</label> <!-- 명시적: label tag의 for 속성과 상호작용 요소의 id 속성을 같은 값으로 설정.-->
+					<input type="password" id="userpw">
+				</li>
+				<li>
+					<label>
+						number
+						<input type="number">
+					</label>
+				</li>
+				<li>
+					<label for="letmecheck">checkbox</label>
+					<input type="checkbox" id="letmecheck">
+				</li>
+				<li><!-- 체크표시 -->
+					<label><input type="radio">네</label>
+				</li>
+				<li>
+					<label>
+						button
+						<input type="button"> <!-- 일반적으로 button 태그 사용 -->
+					</label>
+				</li>	
+				<li>
+					<label for="img">image</label>
+					<input type="image" src="../naver logo.png" id="img">
+				</li>
+				<li>
+					<label>
+						hidden
+						<input type="hidden"> <!--눈에 보이지 않는 입력요소-->
+					</label>
+				</li>
+				<li>
+					<label for="today">date</label>
+						<input type="date" id="today">
+				</li>
+				<li>
+					<label for="local">datetime-local</label>
+					<input type="datetime-local" id="local"> <!--시간까지-->
+				</li>
+				<li>
+					<label for="m">month</label>
+					<input type="month" id="m">
+				</li>
+				<li>
+					<label for="1week">week</label>
+					<input type="week" id="1week">
+				</li>
+				<li>
+					<label for="whattime">time</label>
+					<input type="time" id="whattime">
+				</li>
+				<li>
+					<label for="numrange">range</label>
+					<input type="range" id="numrange">
+				</li>
+				<li>
+					<label for="colorchart">color</label>
+					<input type="color" id="colorchart">
+				</li>
+				<li>
+					<label for="sub">submit</label>
+					<input type="submit" id="sub">
+				</li>
+				<li>
+					<label for="rewrite">reset</label>
+					<input type="reset" id="rewrite">
+				</li>
+		</ul>
+		</form>
+
 	</body>	
 </html>
