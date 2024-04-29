@@ -1,0 +1,16 @@
+.color-primary{
+	color:cornflowerblue;
+}
+
+.font-30{
+	font-size: 30px;
+}
+
+.table-head>tr>td { /* 밑의 tr 밑의 td에 적용*/
+	border: 1px solid #000;
+	font-weight: bold;
+}
+
+.table-body>tr>td {
+	border: 1px solid #000;
+}
